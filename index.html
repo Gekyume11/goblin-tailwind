@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goblin-Tailwind | Dhruv</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" crossorigin href="style.css">
+</head>
+<body>
+
+    <main class="main h-dynamic w-full lg:px-16 lg:py-10 md:px-32 md:py-8 px-[15px] py-5 text-white z-10 relative transition-all ease duration-500 flex flex-col justify-between overflow-hidden">
+
+        <header class="flex items-center justify-between">
+            <a class="text-3xl uppercase font-bold" href="index.html">coc-stats</a>
+            <nav class="lg:flex hidden gap-10">
+                <a class="capitalize font-medium transition-colors duration-300 ease hover:text-slate-300" href="#">home</a>
+                <a class="capitalize font-medium transition-colors duration-300 ease hover:text-slate-300" href="#">about</a>
+                <a class="capitalize font-medium transition-colors duration-300 ease hover:text-slate-300" href="#">clans</a>
+                <a class="capitalize font-medium transition-colors duration-300 ease hover:text-slate-300" href="#">townhall</a>
+                <a class="capitalize font-medium transition-colors duration-300 ease hover:text-slate-300" href="#">troops</a>
+                <a class="capitalize font-medium transition-colors duration-300 ease hover:text-slate-300" href="#">contact</a>
+            </nav>
+            <div class="hamburger lg:hidden relative h-[24px] w-[40px] cursor-pointer transition-all duration-300">
+                <span class="absolute transition-all duration-300 top top-0 left-0 w-full h-[3px] bg-white"></span>
+                <span class="absolute transition-all duration-300 middle top-0 left-0 w-full h-[3px] bg-white translate-y-[10px]"></span>
+                <span class="absolute transition-all duration-300 bottom top-0 left-0 w-full h-[3px] bg-white translate-y-[20px]"></span>
+            </div>
+        </header>
+
+        <section class="hero-content md:static absolute top-[55%] md:top-1/2 -translate-y-[55%] md:translate-y-0">
+            <div class="flex flex-wrap gap-8 lg:gap-0 md:gap-5">
+                <div class="lg:w-1/2 w-full">
+                    <h2 class="mb-4">#2 trending</h2>
+                    <h3 class="capitalize font-semibold tracking-[1px] mb-2">lead supercell</h3>
+                    <h1 class="uppercase lg:mb-8">goblins</h1>
+                    <p class="max-w-[550px] mb-8">Join Million of players worldwide as you build your village raise a clan and compete in Epic Clan Wars!!</p>
+                    <a class="inline-block py-3 px-6 rounded-3xl uppercase transition-all duration-300 ease bg-goblin-main border-2 border-transparent mr-2 sm:mr-8 hover:bg-transparent hover:border-white hover:translate-x-2" href="#">compare</a>
+                    <a class="inline-block py-3 px-6 rounded-3xl uppercase transition-all duration-300 ease border-white border-[1px] hover:border-transparent hover:bg-goblin-main hover:translate-x-2" href="#">watch gameplay</a>
+                </div>
+                <div class="lg:w-1/2 w-full flex items-center justify-center">
+                    <div class="max-w-[350px] md:max-w-[370px] lg:max-w-lg w-full">
+                        <img src="https://gekyume11.github.io/goblin/5b4eee34c051e602a568ce17.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <ul class="hidden lg:flex items-center gap-8">
+            <li><img class="invert scale-50 transition-transform duration-300 cursor-pointer hover:-translate-y-3" src="https://i.ibb.co/x7P24fL/facebook.png"></li>
+            <li><img class="invert scale-50 transition-transform duration-300 cursor-pointer hover:-translate-y-3" src="https://i.ibb.co/Wnxq2Nq/twitter.png"></li>
+            <li class="flex-1"><img class="invert scale-50 transition-transform duration-300 cursor-pointer hover:-translate-y-3" src="https://i.ibb.co/ySwtH4B/instagram.png"></li>
+            <li class="p-4 rounded-3xl bg-goblin-main cursor-pointer transition-transform duration-300 hover:-translate-y-3"><img class="" src="https://gekyume11.github.io/goblin/drop-down-arrow.png"></li>
+        </ul>
+
+    </main>
+
+
+
+
+    <menu class="absolute top-0 right-0 w-[220px] h-full flex justify-center items-center">
+        <ul class="space-y-8">
+            <li><a class="capitalize font-medium transition-colors duration-300 ease text-black hover:text-slate-500 text-2xl" href="#">home</a></li>
+            <li><a class="capitalize font-medium transition-colors duration-300 ease text-black hover:text-slate-500 text-2xl" href="#">about</a></li>
+            <li><a class="capitalize font-medium transition-colors duration-300 ease text-black hover:text-slate-500 text-2xl" href="#">clans</a></li>
+            <li><a class="capitalize font-medium transition-colors duration-300 ease text-black hover:text-slate-500 text-2xl" href="#">townhall</a></li>
+            <li><a class="capitalize font-medium transition-colors duration-300 ease text-black hover:text-slate-500 text-2xl" href="#">troops</a></li>
+            <li><a class="capitalize font-medium transition-colors duration-300 ease text-black hover:text-slate-500 text-2xl" href="#">contact</a></li>
+        </ul>
+    </menu>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger')
+        const main = document.querySelector('.main')
+        hamburger.onclick = ()=>{
+            hamburger.classList.toggle('active')
+            main.classList.toggle('active')
+        }
+    </script>
+    
+</body>
+</html>
