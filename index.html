@@ -9,7 +9,6 @@
   <link rel="stylesheet" crossorigin href="style.css">
 </head>
 <body>
-
     <main class="main h-dynamic w-full lg:px-16 lg:py-10 md:px-32 md:py-8 px-[15px] py-5 text-white z-10 relative transition-all ease duration-500 flex flex-col justify-between overflow-hidden">
 
         <header class="flex items-center justify-between">
@@ -29,7 +28,7 @@
             </div>
         </header>
 
-        <section class="hero-content md:static absolute top-1/2 -translate-y-1/2 md:translate-y-0">
+        <section class="hero-content md:static absolute top-[55%] md:top-1/2 -translate-y-1/2 md:translate-y-0">
             <div class="flex flex-wrap gap-8 lg:gap-0 md:gap-5">
                 <div class="lg:w-1/2 w-full">
                     <h2 class="mb-4">#2 trending</h2>
@@ -56,10 +55,7 @@
 
     </main>
 
-
-
-
-    <menu class="absolute top-0 right-0 w-[220px] h-full flex justify-center items-center">
+    <menu class="absolute top-0 right-0 w-[220px] h-full flex lg:hidden justify-center items-center">
         <ul class="space-y-8">
             <li><a class="capitalize font-medium transition-colors duration-300 ease text-black hover:text-slate-500 text-2xl" href="#">home</a></li>
             <li><a class="capitalize font-medium transition-colors duration-300 ease text-black hover:text-slate-500 text-2xl" href="#">about</a></li>
@@ -78,6 +74,5 @@
             main.classList.toggle('active')
         }
     </script>
-    
 </body>
 </html>
